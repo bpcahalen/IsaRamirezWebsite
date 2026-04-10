@@ -1,0 +1,45 @@
+<template>
+    <div class="resumePage">
+        <div class="resume">
+            <a href="../Isa Ramirez Resume - 2025.pdf" download="IsaRamirezResume" class="resumeLink">Dance Resume</a>
+            <img src="../photos/resumePhoto.png" alt="" class="resumePhoto">
+        </div>
+    </div>
+</template>
+
+<script>
+import resume from "../../public/Isa Ramirez Resume - 2025.pdf"
+</script>
+
+<style>
+.resumePage{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resumePhoto{
+    height: 1000px;
+    width: 900px;
+}
+
+.resumeLink{
+    padding-bottom: 50px;
+    font-family: "Playfair Display", serif;
+    color: #915F6D;
+    text-decoration: none;
+    font-size: 90px;
+}
+
+.resumeLink:hover{
+    color: #cc80ff;
+}
+</style>
