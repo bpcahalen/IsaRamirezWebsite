@@ -57,7 +57,7 @@
 .isa{
   display: flex;
   transform: translateY(-150px) translateX(50px) ;
-  height: 780px;
+  height: 800px;
   width: 450px;
   opacity: 75%;
   padding-left: 100px;

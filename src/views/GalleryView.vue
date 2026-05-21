@@ -126,7 +126,7 @@
         class="carouselButtons carouselButtons--prev"
         type="button"
         aria-label="Previous slide"
-        @click="previousSlide"
+        @click="goPrevious"
       >
         ←
       </button>
@@ -150,7 +150,7 @@
               :src="slide.image"
               :alt="slide.title"
             />
-            <h3 class="slideTitle">"{{ slide.title }}"</h3>
+            <h3 class="slideTitle">{{ slide.title }}</h3>
           </div>
         </div>
       </div>
@@ -159,7 +159,7 @@
         class="carouselButtons carouselButtons--next"
         type="button"
         aria-label="Next slide"
-        @click="nextSlide"
+        @click="goNext"
       >
         →
       </button>
@@ -172,6 +172,7 @@ export default {
   data() {
     return {
       activeIndex: 0,
+      totalRotation: 0,
 
       slides: [
         {
@@ -216,16 +217,17 @@ export default {
         },
       ],
 
-      autoplay: null
+      autoplay: null,
+      autoplayResume: null,
     }
   },
 
   mounted() {
-    this.startAutoplay()
+    this.startAutoplayInterval()
   },
 
   beforeUnmount() {
-    clearInterval(this.autoplay)
+    this.clearAutoplayTimers()
   },
 
   computed: {
@@ -234,7 +236,7 @@ export default {
     },
 
     containerRotation() {
-      return this.activeIndex * this.stepAngle
+      return this.totalRotation
     },
   },
 
@@ -247,18 +249,48 @@ export default {
     },
 
     nextSlide() {
+      this.totalRotation += this.stepAngle
       this.activeIndex = (this.activeIndex + 1) % this.slides.length
     },
 
     previousSlide() {
+      this.totalRotation -= this.stepAngle
       this.activeIndex =
         (this.activeIndex - 1 + this.slides.length) % this.slides.length
     },
 
-    startAutoplay() {
+    clearAutoplayTimers() {
+      clearInterval(this.autoplay)
+      clearTimeout(this.autoplayResume)
+      this.autoplay = null
+      this.autoplayResume = null
+    },
+
+    startAutoplayInterval() {
+      clearInterval(this.autoplay)
       this.autoplay = setInterval(() => {
         this.nextSlide()
       }, 5000)
+    },
+
+    scheduleAutoplayResume() {
+      clearInterval(this.autoplay)
+      this.autoplay = null
+      clearTimeout(this.autoplayResume)
+      this.autoplayResume = setTimeout(() => {
+        this.autoplayResume = null
+        this.startAutoplayInterval()
+      }, 10000)
+    },
+
+    goNext() {
+      this.nextSlide()
+      this.scheduleAutoplayResume()
+    },
+
+    goPrevious() {
+      this.previousSlide()
+      this.scheduleAutoplayResume()
     },
   },
 }
@@ -355,7 +387,7 @@ export default {
   top: calc(100% + 16px);
   left: 50%;
 
-  color: white;
+  color: #4d0066;
   font-family: "Playfair Display", serif;
   font-size: 28px;
   text-align: center;
