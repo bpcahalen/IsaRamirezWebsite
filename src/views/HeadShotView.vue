@@ -1,11 +1,11 @@
 <template>
     <div class="headshots">
         <div class="headshot1">
-            <img src="../photos/headshots/headshot2.JPG" alt="" class="headshot">
+            <img src="../photos/headshots/headshot2.jpg" alt="" class="headshot">
             <a href="../../headshot2.pdf" download="IsaRamirezHeadshot1 " class="headshot1Link">Download Here</a>
         </div>
         <div class="headshot2">
-            <img src="../photos/headshots/headshot1.jpg" alt="" class="headshot">
+            <img src="../photos/headshots/headshot1.JPG" alt="" class="headshot">
             <a href="../../headshot1.pdf" download="IsaRamirezHeadshot2" class="headshot2Link">Download Here</a>
         </div>
     </div>
