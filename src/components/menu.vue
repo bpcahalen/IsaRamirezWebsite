@@ -58,7 +58,7 @@ export default{
 }
 
 .item{
-    color: #4d0066;
+  color: #4d0066;
   text-decoration: none;
   font-size: 20px;
   font-family: "Playfair Display", serif;
