@@ -35,7 +35,15 @@ When I’m not performing  I have the amazing pleasure of teaching at Gus Giorda
     align-items: center;
   }
 
-  .ocuPhoto, .midAbout, .endAbout, .introPhoto{
+  .introPhoto{
+    height: 505px;
+    width: 455px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    border-radius: 25px;
+  }
+
+  .ocuPhoto, .midAbout, .endAbout{
     height: 505px;
     width: 505px;
     padding: 10px 0 10px 0;
