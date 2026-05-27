@@ -14,14 +14,13 @@
 <RouterView />
 <footer>
   <div class="footerInfo">
-    <h2 class="footerName">Isa Ramirez</h2>
+    <router-link to="/" class="footerName">Isa Ramirez</router-link>
     <a href="https://www.instagram.com/" target="_blank"><fa :icon="['fab', 'instagram']" class="instagram" @mouseenter="addBounce($event)" @mouseleave="killBounce($event)"/></a>
-    <div class="footerContact">
-      <h3 class="footerConnectText">Connect</h3>
-      <p class="footerEmail">isaramirez709@gmail.com</p>
-    </div>
+    <!-- <div class="footerContact"> -->
+      <router-link to="/contactme" class="footerConnectText">Let's Connect!</router-link> 
+    <!-- </div> -->
   </div>
-  <p class="copyRight"><fa :icon="['far', 'copyright']"/>barrettcahalen</p>
+  <a href="https://www.linkedin.com/in/barrett-cahalen/" target="blank" class="copyRight"><fa class="copyRightIcon" :icon="['far', 'copyright']"/>2026 Barrett Cahalen</a>
 </footer>
 </template>
 
@@ -130,10 +129,11 @@ header{
 
 .router:hover{
   text-decoration: underline solid;
+  text-underline-offset: 2.5px;
 }
 
 footer{
-  margin-top: 75px;
+  margin-top: 35px;
   padding: 10px 30px 0 30px;
   display: flex;
   flex-direction: column;
@@ -150,49 +150,67 @@ footer{
 }
 
 .instagram{
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
-  padding-left: 80px;
+  /* padding-left: 80px; */
   color: #4d0066;
 }
 
 .footerName{
   font-family: "Playfair Display", serif;
   font-weight: lighter;
-  font-size: 35px;
+  font-size: 25px;
   margin: 0;
   color: #4d0066;
-}
-
-.footerContact{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-decoration: none;
 }
 
 .footerConnectText{
   margin: 0;
   font-family: "Playfair Display", serif;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 25px;
   color: #4d0066;
+  text-decoration: none;
 }
 
-.footerEmail{
+.footerConnectText:hover{
+  text-shadow: 4px 0 8px #4d0066;
+}
+
+/* .footerContact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+} */
+
+/* .footerConnectText:hover{
+  text-decoration: underline solid #4d0066;
+  text-underline-offset: 2.5px;
+} */
+
+/* .footerEmail{
   margin: 0;
   font-family: "Playfair Display", serif;
   font-size: 22px;
   color: #4d0066;
-}
+} */
 
 .copyRight{
   margin: 0;
   display: flex;
   justify-content: center;
-  color: lightgrey;
-  opacity: 50%;
+  color: grey;
+  opacity: .6;
+  text-decoration: none;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+.copyRightIcon{
+  margin-right: 5px;
 }
 </style>

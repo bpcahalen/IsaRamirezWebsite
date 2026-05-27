@@ -34,12 +34,13 @@ import resume from "../../public/Isa Ramirez Resume - 2025.pdf"
 .resumeLink{
     padding-bottom: 50px;
     font-family: "Playfair Display", serif;
-    color: #915F6D;
+    color: #4d0066;
     text-decoration: none;
     font-size: 90px;
 }
 
 .resumeLink:hover{
-    color: #cc80ff;
+    text-decoration: underline solid 1.5px;
+    text-underline-offset: 5px;
 }
 </style>

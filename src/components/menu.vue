@@ -29,6 +29,7 @@ export default{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    z-index: 15;
 }
 
 .link{
@@ -38,11 +39,12 @@ export default{
   font-size: 20px;
   font-family: "Playfair Display", serif;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .link:hover{
   text-decoration: underline solid;
+  text-underline-offset: 2.5px;
 }
 
 .subItems{
@@ -55,6 +57,7 @@ export default{
     align-items: center;
     justify-content: center;
     padding: 15px 10px 0 10px;
+    border-radius: 10%;
 }
 
 .item{
@@ -67,5 +70,6 @@ export default{
 
 .item:hover{
   text-decoration: underline solid;
+  text-underline-offset: 2.5px;
 }
 </style>

@@ -17,15 +17,15 @@
                 <div class="inputArea">
                 <div class="firstName">
                 <label for="firstName" class="firstNameLabel">First Name<fa class="asterisk" :icon="['fas', 'asterisk']" /></label>
-                <input type="text" id="firstName" class="firstNameInput" name="fistName" required><br>
+                <input type="text" id="firstName" class="firstNameInput" name="fistName" required placeholder="Isa"><br>
                 </div>
                 <div class="lastName">
                 <label for="lastName" class="lastNameLabel">Last Name<fa class="asterisk" :icon="['fas', 'asterisk']" /></label>
-                <input type="text" id="lastName" class="lastNameInput" name="lastName" required><br>
+                <input type="text" id="lastName" class="lastNameInput" name="lastName" required placeholder="Ramirez"><br>
                 </div>
                 <div class="email">
                 <label for="email" class="emailLabel">Email<fa class="asterisk" :icon="['fas', 'asterisk']" /> </label>
-                <input type="text" id="email" class="emailInput" name="email" required><br>
+                <input type="text" id="email" class="emailInput" name="email" required placeholder="letsdance@example.com"><br>
                 </div>
                 <div class="services">
                 <label for="services" class="servicesLabel">Service<fa class="asterisk" :icon="['fas', 'asterisk']" /></label>
@@ -156,6 +156,10 @@ export default{
     "submit submit";
     justify-items: center;
     align-items: center;
+}
+
+input::placeholder, textarea::placeholder{
+    opacity: 0.3;
 }
 
 .firstName, .lastName{

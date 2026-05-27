@@ -401,6 +401,8 @@ export default {
   position: absolute;
   top: 50%;
   z-index: 10;
+  color: #4d0066;
+  background-image: url("./photos/indigo_background.avif");
 
   width: 60px;
   height: 60px;
@@ -415,11 +417,17 @@ export default {
   transform: translateY(-50%);
 }
 
+.carouselButtons:hover {
+  /* background-color: #4d0066;
+  color: white; */
+  box-shadow: 0 0 8px #4d0066;
+}
+
 .carouselButtons--prev {
-  left: 0;
+  left: -13%;
 }
 
 .carouselButtons--next {
-  right: 0;
+  right: -13%;
 }
 </style>

@@ -16,7 +16,7 @@ When I’m not performing  I have the amazing pleasure of teaching at Gus Giorda
 <img class="endAbout" src="../photos/isa_end.jpg"/>
   </div>
   <div class="connect">
-  <p>If you want to find about more you can contact me <router-link to="./contactme" class="reRoute">here</router-link> </p>
+  <p>If you want to find about more you can contact me <router-link to="./contactme" class="reRoute">here</router-link>! </p>
 </div>
 </template>
 
@@ -110,12 +110,14 @@ When I’m not performing  I have the amazing pleasure of teaching at Gus Giorda
 
   .reRoute{
     color: black;
-    text-decoration: underline black 2px solid;
+    /* text-decoration: underline black 2px solid; */
+    text-decoration: none;
   }
 
   .reRoute:hover{
-    color: purple;
-    text-decoration: underline purple 2px solid;
+    /* color: #4d0066; */
+    text-decoration: underline black 1px solid;
+    text-underline-offset: 2px;
   }
 
 @media (min-width: 1024px) {

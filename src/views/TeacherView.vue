@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="placeholder">COMING SOON</h1>
+        <h1 class="placeholder">COMING SOON!</h1>
     </div>
 </template>
 

@@ -139,6 +139,7 @@
 
 .exploreButton1:hover, .exploreButton2:hover, .exploreButton3:hover{
   text-decoration: underline white 2px;
+  text-underline-offset: 2.5px;
 }
 
 .fixedPhoto{

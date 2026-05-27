@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import headshot1 from "../../public/headshot1.pdf"
-import headshot2 from "../../public/headshot2.pdf"
+// import headshot1 from "../../public/headshot1.pdf"
+// import headshot2 from "../../public/headshot2.pdf"
 </script>
 
 <style>
@@ -26,7 +26,7 @@ import headshot2 from "../../public/headshot2.pdf"
 
 .headshot{
     height: 700px;
-    width: 600px;
+    width: 500px;
 }
 
 .headshot1, .headshot2{
@@ -43,12 +43,12 @@ import headshot2 from "../../public/headshot2.pdf"
 .headshot1Link, .headshot2Link{
     padding-top: 15px;
     font-family: "Playfair Display", serif;
-    color: #915F6D;
+    color: #4d0066;
     text-decoration: none;
     font-size: 30px;
 }
 
 .headshot1Link:hover, .headshot2Link:hover{
-    color: #cc80ff;
+    text-decoration: underline solid #4d0066 2px;
 }
 </style>
