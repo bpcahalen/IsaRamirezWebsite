@@ -7,7 +7,7 @@
           <div class="explore1">
             <img src="../photos/passePhoto.JPG" alt="" class="exploreImage1">
             <h3 class="exploreTitle1">Performer</h3>
-            <router-link to="/headshot" class="exploreButton1">See More</router-link>
+            <router-link to="/gallery" class="exploreButton1">See More</router-link>
           </div>
           <div class="explore2">
             <img src="../photos/teacherHome.JPG" alt="" class="exploreImage2">
