@@ -1,14 +1,14 @@
 <template>
     <div class="resumePage">
         <div class="resume">
-            <a href="../Isa Ramirez Resume - 2025.pdf" download="IsaRamirezResume" class="resumeLink">Dance Resume</a>
-            <img src="../photos/resumePhoto.png" alt="" class="resumePhoto">
+            <a href="../Isa Ramirez Resume - 2026.pdf" download="IsaRamirezResume" class="resumeLink">Dance Resume</a>
+            <img src="../photos/isaResumePhoto2026.png" alt="" class="resumePhoto">
         </div>
     </div>
 </template>
 
 <script>
-import resume from "../../public/Isa Ramirez Resume - 2025.pdf"
+
 </script>
 
 <style>

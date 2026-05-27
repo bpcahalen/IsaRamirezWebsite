@@ -26,9 +26,9 @@
       <div class="homept2">
         <div class="miniBio">
         <p class="miniBioText">Isa graduated from Oklahoma City University with a bachelor's degree in Performing Arts. 
-          Isa’s performing credits include: “Matilda” at the Fireside Theatre; “In the Heights”  Marriott Lincolnshire; Music Theater Works “Brigadoon” as Maggie Anderson, “White Christmas” and “Zorro! The Musical”;  “Beauty and the Beast” Beverly Arts Center’s (BAC) as a Silly Girl and Choreographer. 
+          Isa’s performing credits include: “Matilda” at the Fireside Theatre; “In the Heights”  Marriott Lincolnshire; Music Theater Works “Brigadoon” as Maggie Anderson, “White Christmas”, and “Zorro! The Musical”;  “Beauty and the Beast” Beverly Arts Center’s (BAC) as a Silly Girl and Choreographer; And “West Side Story” with the Fireside Theater. 
           She is also a certified Yoga Instructor and teaches in the Chicagoland area and is also a part of the Gus Legacy Company.  
-          Most recent contract is in “West Side Story” with the Fireside Theater. </p>
+          Most recent credit was in "Oklahoma" at the Fireside Theater!</p>
           <img src="../photos/aboutIsa2.png" alt="" class="miniBioImage">
       </div>
       </div>
