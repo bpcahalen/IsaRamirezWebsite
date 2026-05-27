@@ -15,7 +15,7 @@
 <footer>
   <div class="footerInfo">
     <router-link to="/" class="footerName">Isa Ramirez</router-link>
-    <a href="https://www.instagram.com/" target="_blank"><fa :icon="['fab', 'instagram']" class="instagram" @mouseenter="addBounce($event)" @mouseleave="killBounce($event)"/></a>
+    <a href="https://www.instagram.com/isa_nychi/" target="_blank"><fa :icon="['fab', 'instagram']" class="instagram" @mouseenter="addBounce($event)" @mouseleave="killBounce($event)"/></a>
     <!-- <div class="footerContact"> -->
       <router-link to="/contactme" class="footerConnectText">Let's Connect!</router-link> 
     <!-- </div> -->

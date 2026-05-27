@@ -50,5 +50,6 @@
 
 .headshot1Link:hover, .headshot2Link:hover{
     text-decoration: underline solid #4d0066 2px;
+    text-underline-offset: 2.5px;
 }
 </style>
