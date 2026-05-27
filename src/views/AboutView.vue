@@ -44,7 +44,7 @@ When I’m not performing  I have the amazing pleasure of teaching at Gus Giorda
   }
 
   .ocuPhoto, .midAbout, .endAbout{
-    height: 505px;
+    height: 575px;
     width: 505px;
     padding: 10px 0 10px 0;
     margin: 0;
